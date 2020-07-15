@@ -1,0 +1,117 @@
+/* #animation {
+  display: none;
+}
+
+#menu {
+  position: fixed;
+  z-index: 9999;
+  list-style: none;
+  display: flex;
+}
+
+#menu li {
+  padding: 15px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.section {
+  font-size: 200px;
+  text-align: center;
+} */
+
+/*  barba */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #161616;
+  color: white;
+}
+
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: #ff5c5c;
+  width: 0%;
+  height: 100%;
+}
+
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
+
+h1 {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  font-size: 84px;
+}
+
+.button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 24px 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 10px;
+  transition: 0.3s;
+}
+
+.button:hover a {
+  background: white;
+  color: #161616;
+  transition: 0.3s;
+}
+
+.barba-leave-active,
+.barba-enter-active {
+  transition: opacity 450ms ease;
+}
+
+/* initial state */
+.barba-leave {
+  opacity: 1;
+}
+
+.barba-enter {
+  opacity: 0;
+}
+
+/* ending state */
+.barba-leave-to {
+  opacity: 0;
+}
+
+.barba-enter-to {
+  opacity: 1;
+}
